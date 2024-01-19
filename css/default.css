@@ -1,0 +1,171 @@
+
+
+/* This file only contains components of this website, they form the basic layout of this website and
+are often used components of this work. Study this components for easy understanding of the dynamics of this website, thus default.css*/
+
+:root {
+  --white-color: #ffffff;
+  --gold-color: #fdb900;
+  --text-color: #5E5E5E;
+  --dark-color: #000000;
+  --bg-color: rgba(244,244,244,255);
+
+  /* font sizes  */
+  --size-5: 0.3125rem;
+  --size-10: 0.625rem;
+  --size-12: 0.75rem;
+  --size-14: 0.875rem;
+  --size-15: 0.9375rem;
+  --size-16: 1rem;
+  --size-18: 1.125rem;
+  --size-20: 1.25rem;
+  --size-25: 1.5625rem;
+  --size-30: 1.875rem;
+  --size-35: 2.1875rem;
+  --size-40: 2.5rem;
+  --size-50: 3.125rem;
+  --size-60: 3.75rem;
+  --size-70: 4.375rem;
+  --size-80: 5rem;
+  --size-90: 5.625rem;
+  --size-100: 6.25rem;
+  --size-125: 7.8125rem;
+  --size-150: 9.375rem;
+  --size-200: 12.5rem;
+
+}
+html {
+  scroll-behavior: smooth;
+}
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "franklin-gothic-urw-comp","open sans","montserrat",sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.375rem;
+  max-width: 1200px;
+  margin: auto;
+  text-rendering: optimizeLegibility;
+  text-shadow: 0 0 1px transparent;
+  word-break: break-word;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+img {
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  vertical-align: middle;
+  border-style: none;
+}
+h2, h3, h4 {
+  text-transform: uppercase;
+  line-height: 1.3;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+p {
+  font-size: var(--size-14);
+  padding: 2px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+i {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.btn {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 15px;
+  color: black;
+  background-color: transparent;
+  border: 1px solid var(--gold-color);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+.primary-btn {
+  background-color: var(--gold-color);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  
+}
+.image {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+.content {
+  color: var(--dark-color);
+  padding: 10px;
+  max-width: 500px;
+}
+.content p {
+  font-size: var(--size-14);
+  font-weight: 400;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  color: var(--text-color);
+}
+.line {
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: var(--gold-color);
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.overlay {
+  background-image: linear-gradient(
+    rgba(0,0,0,0.5),rgba(0,0,0,0.5)
+    );
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+.container {
+  width: 100%;
+  padding-left: var(--size-100);
+  padding-right: var(--size-100);
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1100px;
+  }
+}
