@@ -40,8 +40,6 @@ html {
 *,
 ::after,
 ::before {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 body {
@@ -64,10 +62,6 @@ ul {
   padding: 0;
   list-style: none;
 }
-li {
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
 img {
   max-width: 100%;
   width: 100%;
@@ -89,8 +83,8 @@ p {
   color: var(--text-color);
 }
 i {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
 }
 .btn {
   font-size: 13px;
@@ -117,7 +111,7 @@ i {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   
 }
-.image {
+.image-wrapper {
   margin: 0;
   padding: 0;
   position: relative;
@@ -142,7 +136,7 @@ i {
   height: 2px;
   background-color: var(--gold-color);
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .overlay {
   background-image: linear-gradient(

@@ -27,8 +27,6 @@ header .top {
   padding-top: 5px;
   padding-bottom: 5px;
   border-right: 1px solid rgba(255, 255, 255, 0.5);
-}
-.icon i {
   font-size: var(--size-10);
 }
 .icon i span {
@@ -67,7 +65,7 @@ header .top {
   position: absolute;
   outline: none;
   right: var(--size-20);
-  top: var(--size-30);
+  top: 45px;
   background-color: transparent;
   border: 1px solid transparent;
 }
@@ -88,15 +86,12 @@ header .top {
 .navbar-wrapper .navbar-nav {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 30px;
-  z-index: 1;
+  gap: 20px;
 }
 .navbar-nav li a {
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: var(--size-14);
   font-weight: 500;
-  line-height: 1.75;
 }
 .navbar-nav li a:hover {
   color: var(--gold-color);
@@ -179,14 +174,14 @@ main .who-are-we {
 .who-are-we-wrapper > div {
   flex: 1;
 }
-.who-are-we-wrapper .image {
+.who-are-we-wrapper .image-wrapper {
   position: relative;
 }
-.image .first-image {
+.image-wrapper .first-image {
   position: relative;
 }
-.image .first-image,
-.image .second-image {
+.image-wrapper .first-image,
+.image-wrapper .second-image {
   border-radius: 50px;
   max-width: 400px;
 }
@@ -201,7 +196,7 @@ main .who-are-we {
     );
   border-radius: 50px;
 }
-.image .second-image {
+.image-wrapper .second-image {
   position: absolute;
   content: "";
   top: 50px;
