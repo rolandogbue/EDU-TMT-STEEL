@@ -3,13 +3,13 @@
 @import url('responsive.css');
 
 h2 {
-  font-size: 18px;
+  font-size: var(--size-18);
 }
 h3 {
-  font-size: 15px;
+  font-size: var(--size-15);
 }
 label {
-  font-size: 14px;
+  font-size: var(--size-14);
 }
 
 header .hero-section {
@@ -21,8 +21,8 @@ header .hero-section {
   animation: hero-slider 20s linear infinite;
 }
 main .contact-section {
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: var(--size-150);
+  padding-bottom: var(--size-150);
 }
 .overlay-info p {
   color: var(--white-color);
@@ -36,50 +36,50 @@ main .contact-section {
   text-align: center;
 }
 .contact-phone div {
-  width: 80px;
+  width: var(--size-80);
   background-color: var(--bg-color);
-  padding: 20px;
+  padding: var(--size-20);
   margin: auto;
   border-radius: 8px;
 }
 .contact-phone div i {
-  font-size: 25px;
+  font-size: var(--size-25);
   color: var(--gold-color);
 }
 .contact-phone h3 {
-  margin-top: 20px;
+  margin-top: var(--size-20);
 }
 .contact-email div {
-  width: 80px;
+  width: var(--size-80);
   background-color: var(--bg-color);
-  padding: 20px;
+  padding: var(--size-20);
   margin: auto;
   border-radius: 8px;
 }
 .contact-email div i {
-  font-size: 25px;
+  font-size: var(--size-25);
   color: var(--gold-color);
 }
 .contact-email h3 {
-  margin-top: 20px;
+  margin-top: var(--size-20);
 }
 .contact-address div {
-  width: 80px;
+  width: var(--size-80);
   background-color: var(--bg-color);
-  padding: 20px;
+  padding: var(--size-20);
   margin: auto;
   border-radius: 8px;
 }
 .contact-address div i {
-  font-size: 25px;
+  font-size: var(--size-25);
   color: var(--gold-color);
 }
 .contact-address h3 {
-  margin-top: 20px;
+  margin-top: var(--size-20);
 }
 .container .contact-form {
-  margin-top: 100px;
-  padding: 35px 10px;
+  margin-top: var(--size-100);
+  padding: var(--size-35) var(--size-10);
   border: 1px solid var(--bg-color);
   box-shadow: 0 0 3px rgba(60, 72, 88, 0.15);
   border-radius: 8px;
@@ -89,7 +89,7 @@ main .contact-section {
   padding: 5px;
 }
 .form h2 {
-  margin-bottom: 30px;
+  margin-bottom: var(--size-30);
 }
 .form .flex {
   display: flex;
@@ -108,9 +108,9 @@ main .contact-section {
   width: 100%;
   resize: both;
   margin-top: 5px;
-  height: 35px;
-  padding: 0 30px;
-  font-size: 14px;
+  height: var(--size-35);
+  padding: 0 var(--size-30);
+  font-size: var(--size-14);
   box-shadow: none;
   background-color: #fff;
   border: 1px solid #dee2e6;
@@ -134,9 +134,9 @@ main .contact-section {
   width: 100%;
   resize: both;
   margin-top: 5px;
-  height: 35px;
-  padding: 0 30px;
-  font-size: 14px;
+  height: var(--size-35);
+  padding: 0 var(--size-30);
+  font-size: var(--size-14);
   box-shadow: none;
   background-color: #fff;
   border: 1px solid #dee2e6;
@@ -152,14 +152,14 @@ main .contact-section {
 .form .subject {
   display: block;
   position: relative;
-  margin-top: 20px;
+  margin-top: var(--size-20);
 }
 .subject input {
   width: 100%;
   margin-top: 5px;
-  height: 35px;
-  padding: 0 30px;
-  font-size: 14px;
+  height: var(--size-35);
+  padding: 0 var(--size-30);
+  font-size: var(--size-14);
   box-shadow: none;
   background-color: #fff;
   border: 1px solid #dee2e6;
@@ -175,7 +175,7 @@ main .contact-section {
 .form .comment {
   display: block;
   position: relative;
-  margin-top: 20px;
+  margin-top: var(--size-20);
 }
 .comment label sup {
   font-size: 8px;
@@ -183,12 +183,12 @@ main .contact-section {
 }
 .comment textarea {
   width: 100%;
-  min-height: 150px;
+  min-height: var(--size-150);
   resize: both;
   margin-top: 5px;
-  height: 35px;
-  padding: 0 30px;
-  font-size: 14px;
+  height: var(--size-35);
+  padding: 0 var(--size-30);
+  font-size: var(--size-14);
   box-shadow: none;
   background-color: #fff;
   border: 1px solid #dee2e6;
@@ -203,8 +203,8 @@ main .contact-section {
 }
 .form button {
   width: 100%;
-  height: 60px;
-  margin-top: 20px;
+  height: var(--size-60);
+  margin-top: var(--size-20);
   box-shadow: none;
   background-color: var(--gold-color);
   border: 1px solid #dee2e6;

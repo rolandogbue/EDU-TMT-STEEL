@@ -6,8 +6,8 @@ header {
 header .top {
   background-color: var(--dark-color);
   color: var(--white-color);
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
+  border-top-right-radius: var(--size-5);
+  border-top-left-radius: var(--size-5);
   z-index: 100;
   position: fixed;
   max-width: 1200px;
@@ -22,10 +22,10 @@ header .top {
   display: flex;
 }
 .icon-wrapper .icon {
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-left: var(--size-10);
+  padding-right: var(--size-10);
+  padding-top: var(--size-5);
+  padding-bottom: var(--size-5);
   border-right: 1px solid rgba(255, 255, 255, 0.5);
   font-size: var(--size-10);
 }
@@ -36,17 +36,17 @@ header .top {
   display: flex;
   gap: var(--size-15);
   align-items: center;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-left: var(--size-10);
+  padding-right: var(--size-10);
+  padding-top: var(--size-10);
+  padding-bottom: var(--size-10);
   border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 .social li a {
   display: flex;
   align-items: center;
   color: var(--white-color);
-  font-size: 12px;
+  font-size: var(--size-12);
 }
 .social li a:hover {
   color: var(--gold-color);
@@ -58,8 +58,8 @@ header .top {
 .navbar .navbar-wrapper {
   display: flex;
   align-items: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: var(--size-5);
+  padding-bottom: var(--size-5);
 }
 .navbar-wrapper .navbar-toggler {
   position: absolute;
@@ -80,13 +80,13 @@ header .top {
 }
 .navbar-wrapper .brand {
   margin-right: auto;
-  width: 50px;
+  width: var(--size-50);
   z-index: 1;
 }
 .navbar-wrapper .navbar-nav {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: var(--size-20);
 }
 .navbar-nav li a {
   text-transform: uppercase;
@@ -122,11 +122,11 @@ header .hero-section {
   }
 }
 .hero-section .overlay {
-  backdrop-filter: blur(0.5px);
+  backdrop-filter: blur(0.var(--size-5));
 }
 .overlay .overlay-info {
   width: 60%;
-  margin: 200px auto 0;
+  margin: var(--size-200) auto 0;
   text-align: center;
   color: var(--white-color);
 }
@@ -139,7 +139,7 @@ header .hero-section {
   text-transform: uppercase;
   font-size: var(--size-40);
   margin-top: 0;
-  margin-bottom: 5px;
+  margin-bottom: var(--size-5);
   letter-spacing: 0;
   line-height: 1.3;
 }
@@ -149,14 +149,14 @@ header .hero-section {
 .overlay-info p {
   text-align: center;
   color: var(--white-color);
-  padding: 5px;
+  padding: var(--size-5);
 }
 .overlay-info .overlay-info-btn {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 30px;
+  gap: var(--size-20);
+  margin-top: var(--size-30);
 }
 .overlay-info-btn .transparent-btn {
   color: var(--gold-color);
@@ -165,11 +165,11 @@ header .hero-section {
 }
 /* who are we section  */
 main .who-are-we {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: var(--size-100);
+  padding-bottom: var(--size-100);
 }
 .who-are-we .who-are-we-wrapper.flex{
-  gap: 30px;
+  gap: var(--size-30);
 }
 .who-are-we-wrapper > div {
   flex: 1;
@@ -182,25 +182,25 @@ main .who-are-we {
 }
 .image-wrapper .first-image,
 .image-wrapper .second-image {
-  border-radius: 50px;
+  border-radius: var(--size-50);
   max-width: 400px;
 }
 .first-image img,
 .second-image img {
-  border-radius: 50px;
+  border-radius: var(--size-50);
   width: 400px;
 }
 .first-image .overlay {
   background-image: linear-gradient(
     rgba(252, 190, 21, 0.7),rgba(252, 190, 21, 0.6)
     );
-  border-radius: 50px;
+  border-radius: var(--size-50);
 }
 .image-wrapper .second-image {
   position: absolute;
   content: "";
-  top: 50px;
-  left: 25px;
+  top: var(--size-50);
+  left: var(--size-25);
 }
 .wrapper-info h4 {
   font-size: var(--size-14);
@@ -208,10 +208,10 @@ main .who-are-we {
 }
 /* service section  */
 main .services {
-  padding-top: 100px;
-  padding-bottom: 100px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-top: var(--size-100);
+  padding-bottom: var(--size-100);
+  padding-left: var(--size-50);
+  padding-right: var(--size-50);
   background-color: var(--bg-color);
 }
 .services .service-wrapper {
@@ -219,8 +219,8 @@ main .services {
 }
 .service-wrapper  .service-header {
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 100px;
+  /* margin-top: var(--size-50); */
+  margin-bottom: var(--size-100);
   margin-left: auto;
   margin-right: auto;
 }
@@ -231,20 +231,20 @@ main .services {
 .service-header span {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5px;
+  margin-top: var(--size-5);
 }
 .service-wrapper .grid {
-  gap: 20px;
+  gap: var(--size-20);
 }
 .service-wrapper .service-detail {
-  border-radius: 30px;
+  border-radius: var(--size-30);
   border: 1px solid var(--gold-color);
-  padding: 10px;
-  height: 200px;
+  padding: var(--size-10);
+  height: var(--size-200);
 }
 .service-wrapper .service-detail:hover {
   background-color: var(--gold-color);
-  border-radius: 30px;
+  border-radius: var(--size-30);
   box-shadow: 1px 1px 1px 1px;
 }
 .service-detail > div {
@@ -259,16 +259,16 @@ main .services {
 }
 /* why us section */
 main .why-us {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: var(--size-100);
+  padding-bottom: var(--size-100);
 }
 .why-us-wrapper .why-us-header {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: var(--size-100);
+  margin-bottom: var(--size-100);
   text-align: center;
-  padding: 5px;
+  padding: var(--size-5);
 }
 .why-us-header h4 {
   font-size: var(--size-14);
@@ -278,10 +278,10 @@ main .why-us {
   margin: auto;
 }
 .why-us-wrapper .why-us-grid {
-  gap: 50px;
+  gap: var(--size-50);
 }
 .why-us-grid .card {
-  padding: 10px;
+  padding: var(--size-10);
   margin: auto;
 }
 .card h3 {
@@ -289,14 +289,14 @@ main .why-us {
 }
 /* partnership section  */
 main .partnership {
-  padding: 60px 0;
+  padding: var(--size-60) 0;
   white-space: nowrap;
   overflow: hidden;
   background-color: rgba(244,244,244,255);
 }
 .partnership .slide {
   display: inline-block;
-  animation: slideIn 5s linear infinite;
+  animation: slideIn 10s linear infinite;
 }
 
 @keyframes slideIn {
@@ -308,13 +308,13 @@ main .partnership {
   }
 }
 .slide img {
-  margin: 0 20px;
-  width: 200px;
+  margin: 0 var(--size-20);
+  width: var(--size-200);
 }
 /* testimonial section  */
 main .testimonials {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: var(--size-100);
+  padding-bottom: var(--size-100);
 }
 .testimonials .testimonial-header {
   text-align: center;
@@ -376,6 +376,7 @@ main .testimonials {
 }
 .lower .quote {
   width: var(--size-80);
+  height: var(--size-80);
   float: right;
   margin-top: var(--size-16);
 }
@@ -400,15 +401,15 @@ main .request-engineer {
   background-position: center;
   background-size: cover;
   position: relative;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: var(--size-150);
+  padding-bottom: var(--size-150);
 }
 .request-engineer-wrapper .overlay {
   background-image: linear-gradient(
     rgba(0,0,0,0.3),rgba(0,0,0,0.3)
     );
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: var(--size-150);
+  padding-right: var(--size-150);
   backdrop-filter: blur(3px);
 }
 .overlay .text {
@@ -417,7 +418,7 @@ main .request-engineer {
 }
 .text h2 {
   text-transform: capitalize;
-  font-size: 20px;
+  font-size: var(--size-20);
   font-weight: 600;
   margin-top: 0;
   margin-bottom: 0;
@@ -426,14 +427,14 @@ main .request-engineer {
 footer {
   background-color: var(--bg-color);
   color: black;
-  padding-top: 50px;
+  padding-top: var(--size-50);
 }
 .company-info {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: var(--size-50);
+  padding-bottom: var(--size-50);
 }
 .company-info h4 {
   font-size: var(--size-16);
@@ -447,8 +448,8 @@ footer {
   color: var(--dark-color);
 }
 .address ul li {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: var(--size-5);
+  margin-bottom: var(--size-5);
 }
 .address a {
   color: var(--dark-color);
@@ -460,7 +461,7 @@ footer {
 .address .social-link i {
   color: var(--dark-color);
   font-size: var(--size-14);
-  margin-right: 20px;
+  margin-right: var(--size-20);
 }
 .address .social-link i:hover {
   color: var(--gold-color);
@@ -487,7 +488,7 @@ footer {
   color: var(--gold-color);
 }
 .shortcut-links li a i {
-  margin-right: 10px;
+  margin-right: var(--size-10);
 }
 .company-info .news-letter {
   display: block;
@@ -501,12 +502,12 @@ footer {
 }
 .subscribe input {
   height: 34px;
-  padding: 5px 10px;
+  padding: var(--size-5) var(--size-10);
   border: none;
   background-color: #e1e5e6;
 }
 .subscribe .send-btn {
-  width: 60px;
+  width: var(--size-60);
   height: 34px;
   padding: 0;
   overflow: hidden;
@@ -521,25 +522,26 @@ footer {
   width: 100%;
   height: 100%;
   transition: all .2s ease-in-out;
-  padding-top: 5px;
+  padding-top: var(--size-5);
 }
 .alt-send-btn:hover {
   transform: translate3d(0px, -29px, 0px);
 }
 .alt-send-btn i {
-  font-size: 20px;
+  font-size: var(--size-20);
   color: var(--gold-color);
 }
 .alt-send-btn .send-text {
   display: block;
-  margin-top: 10px;
-  font: 700 14px 'Lato', sans-serif;
+  margin-top: var(--size-10);
+  font: 700 
+   'Lato', sans-serif;
   letter-spacing: 2px;
   color: var(--gold-color);
 }
 .copyright {
   text-align: center;
-  padding: 10px;
+  padding: var(--size-10);
   border-top: 1px solid var(--gold-color);
 }
 .copyright p {
