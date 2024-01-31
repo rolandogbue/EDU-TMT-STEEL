@@ -558,7 +558,7 @@ footer {
   width: var(--size-50);
   line-height: var(--size-50);
   position: fixed;
-  bottom: var(--size-30);
+  bottom: var(--size-150);
   right: var(--size-30);
   text-align: center;
   border-radius: 8px;
