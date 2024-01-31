@@ -27,7 +27,7 @@ main .contact-section {
 .overlay-info p {
   color: var(--white-color);
 }
-.container .upper-info {
+.contact-wrapper .upper-info {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;

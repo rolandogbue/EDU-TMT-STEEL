@@ -210,6 +210,13 @@
     right: 0;
     background-color: var(--dark-color);
   }
+  .contact-wrapper .upper-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: var(--size-30);
+  }
   .form .flex {
     display: flex;
     align-items: center;
