@@ -1,10 +1,6 @@
 @import url('style.css');
-@import url('default.css');
-@import url('responsive.css');
 
-h2 {
-  font-size: var(--size-18);
-}
+
 h3 {
   font-size: var(--size-15);
 }
@@ -29,8 +25,9 @@ main .contact-section {
 }
 .contact-wrapper .upper-info {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 200px;
 }
 .upper-info > div {
   text-align: center;
@@ -62,6 +59,11 @@ main .contact-section {
 }
 .contact-email h3 {
   margin-top: var(--size-20);
+}
+.contact-address,
+.contact-email,
+.contact-phone {
+  max-width: 200px;
 }
 .contact-address div {
   width: var(--size-80);

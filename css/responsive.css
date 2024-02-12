@@ -112,6 +112,9 @@
     margin-right: var(--size-20);
     color: var(--dark-color);
   }
+  .navbar-nav li a:hover {
+    color: var(--gold-color);
+  }
   .overlay-info h3 {
     font-size: var(--size-10);
     color: var(--gold-color);
@@ -223,9 +226,8 @@
   /* contact section  */
   .contact-wrapper .upper-info {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    flex-direction: column;
     gap: var(--size-30);
   }
   .form .flex {
