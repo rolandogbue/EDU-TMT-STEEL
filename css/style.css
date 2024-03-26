@@ -95,7 +95,7 @@ header .hero-section {
   background-color: var(--bg-color);
   background-size: cover;
   position: relative;
-  animation: hero-slider 20s linear infinite;
+  animation: hero-slider 40s linear infinite;
 }
 @keyframes hero-slider {
   0%, 100% {
