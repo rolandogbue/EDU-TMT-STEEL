@@ -82,7 +82,7 @@ header .top {
 	gap: var(--size-20);
 }
 .navbar-nav li a {
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	font-size: var(--size-14);
 	font-weight: 500;
 }
@@ -131,11 +131,21 @@ header .hero-section {
 }
 
 @keyframes slider {
-  0% { opacity: 0; }
-  5% { opacity: 1; }
-  20% { opacity: 1; }
-  25% { opacity: 0; }
-  100% { opacity: 0; }
+	0% {
+		opacity: 0;
+	}
+	5% {
+		opacity: 1;
+	}
+	20% {
+		opacity: 1;
+	}
+	25% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
 }
 .hero-section .overlay {
 	position: relative;
@@ -157,12 +167,11 @@ header .hero-section {
 	padding: 20px;
 	position: absolute;
 	top: 0;
-	z-index: 11;
+	z-index: 15;
 }
 .overlay-info h3 {
 	font-size: var(--size-12);
 	color: var(--gold-color);
-	text-transform: uppercase;
 }
 .overlay-info h1 {
 	text-transform: uppercase;
@@ -179,6 +188,7 @@ header .hero-section {
 	text-align: center;
 	color: var(--white-color);
 	padding: var(--size-5);
+	/* font-size: var(--size-15); */
 }
 .overlay-info .overlay-info-btn {
 	display: flex;
@@ -190,7 +200,14 @@ header .hero-section {
 .overlay-info-btn .transparent-btn {
 	color: var(--gold-color);
 	font-weight: 500;
-	text-transform: uppercase;
+}
+.overlay-info-btn .transparent-btn:hover {
+	background-color: var(--dark-color);
+	transform: scale(1.1);
+}
+.overlay-info-btn .primary-btn:hover {
+	background-color: var(--dark-color);
+	color: var(--gold-color);
 }
 /* who are we section  */
 main .who-are-we {
@@ -236,15 +253,61 @@ main .who-are-we {
 	font-size: var(--size-14);
 	color: var(--gold-color);
 }
-/* service section  */
-main .services {
+/* product section  */
+main .product {
 	padding-top: var(--size-100);
 	padding-bottom: var(--size-100);
 	padding-left: var(--size-50);
 	padding-right: var(--size-50);
-	background-color: var(--bg-color);
+	/* background-color: var(--bg-color); */
 }
-.services .service-wrapper {
+.product .product-wrapper {
+	display: block;
+}
+.product-wrapper .product-header {
+	text-align: center;
+	margin-bottom: var(--size-100);
+	margin-left: auto;
+	margin-right: auto;
+}
+.product-header h4 {
+	font-size: var(--size-14);
+	color: var(--gold-color);
+}
+.product-header span {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: var(--size-5);
+}
+.product-wrapper .grid {
+	gap: var(--size-20);
+}
+.product-wrapper .product-detail {
+	border-radius: var(--size-30);
+	border: 1px solid var(--gold-color);
+	padding: var(--size-10);
+	height: var(--size-200);
+}
+.product-wrapper .product-detail:hover {
+	background-color: var(--gold-color);
+	border-radius: var(--size-30);
+	box-shadow: 1px 1px 1px 1px;
+}
+.product-detail > div {
+	flex: 1;
+}
+.product-detail .detail-image {
+	max-width: 300px;
+	margin: auto;
+}
+/* service section  */
+main .service {
+	padding-top: var(--size-100);
+	padding-bottom: var(--size-100);
+	padding-left: var(--size-50);
+	padding-right: var(--size-50);
+}
+.service .service-wrapper {
 	display: block;
 }
 .service-wrapper .service-header {
@@ -265,26 +328,57 @@ main .services {
 .service-wrapper .grid {
 	gap: var(--size-20);
 }
-.service-wrapper .service-detail {
+.service-wrapper .service-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin: auto;
 	border-radius: var(--size-30);
 	border: 1px solid var(--gold-color);
-	padding: var(--size-10);
-	height: var(--size-200);
+	height: 250px;
 }
-.service-wrapper .service-detail:hover {
+.service-card .card-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 60px;
+	height: 60px;
+	margin: 0 auto 15px;
 	background-color: var(--gold-color);
-	border-radius: var(--size-30);
-	box-shadow: 1px 1px 1px 1px;
+	border-radius: 50%;
+
+	font-size: 32px;
+	margin-bottom: 10px;
 }
-.service-detail > div {
-	flex: 1;
+.service-card .content {
+	text-align: center;
 }
-.service-detail .detail-image {
-	max-width: 300px;
-	margin: auto;
+/* Trusted section  */
+.trusted .trusted-wrapper {
+	background-color: #173e75;
+	border-radius: 24px;
+	padding: 50px 50px;
 }
-.detail-image img {
-	width: 100%;
+.trusted-wrapper h4 {
+	text-align: center;
+	color: var(--white-color);
+}
+.trusted-wrapper .grid {
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.grid .card {
+	text-align: center;
+	margin-top: 40px;
+}
+.grid .card span {
+	color: var(--gold-color);
+	font-size: var(--size-50);
+}
+.grid .card p {
+	color: var(--white-color);
+	font-size: var(--size-18px);
 }
 /* why us section */
 main .why-us {
