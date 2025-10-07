@@ -368,15 +368,15 @@ main .service {
 .trusted-wrapper .grid {
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
-.grid .card {
+.trusted-card .card {
 	text-align: center;
 	margin-top: 40px;
 }
-.grid .card span {
+.trusted-card .card span {
 	color: var(--gold-color);
 	font-size: var(--size-50);
 }
-.grid .card p {
+.trusted-card .card p {
 	color: var(--white-color);
 	font-size: var(--size-18px);
 }
