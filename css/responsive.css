@@ -29,6 +29,7 @@
 	[aria-expanded="true"] ~ .navbar-nav li a {
 		margin-right: var(--size-20);
 		color: var(--font-color-dark);
+		font-size: var(--size-15);
 	}
 	.navbar-nav li a:hover {
 		color: var(--gold-color);
@@ -119,6 +120,7 @@
 	[aria-expanded="true"] ~ .navbar-nav li a {
 		margin-right: var(--size-20);
 		color: var(--dark-color);
+		font-size: var(--size-15);
 	}
 	.navbar-nav li a:hover {
 		color: var(--gold-color);
@@ -169,6 +171,10 @@
 	.product-wrapper .product-detail:hover {
 		background-color: transparent;
 		box-shadow: 0px 0px 0px 0px;
+		transform: scale(1);
+	}
+	.product-detail .detail-content a {
+		display: none;
 	}
 	/* partnership section  */
 	.partnership {

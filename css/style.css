@@ -225,6 +225,7 @@ main .product {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: var(--size-5);
+	margin-bottom: var(--size-5);
 }
 .product-wrapper .grid {
 	gap: var(--size-20);
@@ -236,9 +237,7 @@ main .product {
 	height: var(--size-200);
 }
 .product-wrapper .product-detail:hover {
-	background-color: var(--gold-color);
-	border-radius: var(--size-30);
-	box-shadow: 1px 1px 1px 1px;
+	transform: scale(1.05);
 }
 .product-detail > div {
 	flex: 1;
@@ -247,6 +246,19 @@ main .product {
 	max-width: 300px;
 	margin: auto;
 }
+.product-detail .detail-content div {
+	margin-bottom: 20px;
+}
+.product-detail .detail-content a:hover {
+	background-color: var(--gold-color);
+}
+.product-wrapper .product-get-quote {
+	text-align: center;
+	margin-top: 50px;
+}
+/* .product-wrapper .product-get-quote:hover {
+	transform: scale(1.1);
+} */
 /* service section  */
 main .service {
 	padding-top: var(--size-100);
