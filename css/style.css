@@ -245,6 +245,7 @@ main .product {
 .product-detail .detail-image {
 	max-width: 300px;
 	margin: auto;
+	padding: 5px;
 }
 .product-detail .detail-content div {
 	margin-bottom: 20px;
