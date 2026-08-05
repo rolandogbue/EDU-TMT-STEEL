@@ -49,10 +49,11 @@ body {
 	text-shadow: 0 0 1px transparent;
 	word-break: break-word;
 	margin: 0;
+	user-select: none;
 }
 a {
 	text-decoration: none;
-	color: black;
+	color: var(--text-color);
 }
 ul {
 	margin: 0;
@@ -88,7 +89,7 @@ i {
 .btn {
 	font-size: 13px;
 	font-weight: 600;
-	padding: 10px 20px;
+	padding: 10px 40px;
 	color: black;
 	background-color: transparent;
 	border: 1px solid var(--gold-color);

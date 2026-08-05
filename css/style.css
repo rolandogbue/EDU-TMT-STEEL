@@ -82,7 +82,7 @@ header .top {
 	gap: var(--size-20);
 }
 .navbar-nav li a {
-	/* text-transform: uppercase; */
+	text-transform: uppercase;
 	font-size: var(--size-14);
 	font-weight: 500;
 }
@@ -122,6 +122,14 @@ header .hero-section {
 .overlay-info h3 {
 	font-size: var(--size-12);
 	color: var(--gold-color);
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+.overlay-info h3 > .hero-eyebrow-line {
+	width: 40px;
+	height: 1px;
+	background: var(--gold-color);
 }
 .overlay-info h1 {
 	text-transform: uppercase;
@@ -142,7 +150,7 @@ header .hero-section {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: var(--size-20);
+	gap: var(--size-30);
 	margin-top: var(--size-30);
 }
 .overlay-info-btn .transparent-btn {
@@ -151,11 +159,12 @@ header .hero-section {
 }
 .overlay-info-btn .transparent-btn:hover {
 	background-color: var(--dark-color);
-	transform: scale(1.1);
+	/* transform: scale(1.1); */
 }
 .overlay-info-btn .primary-btn:hover {
 	background-color: var(--dark-color);
 	color: var(--gold-color);
+	transform: scale(1.1);
 }
 /* who are we section  */
 main .who-are-we {
@@ -236,9 +245,9 @@ main .product {
 	padding: var(--size-10);
 	height: var(--size-200);
 }
-.product-wrapper .product-detail:hover {
+/* .product-wrapper .product-detail:hover {
 	transform: scale(1.05);
-}
+} */
 .product-detail > div {
 	flex: 1;
 }
@@ -254,12 +263,13 @@ main .product {
 	background-color: var(--gold-color);
 }
 .product-wrapper .product-get-quote {
+	padding: 10px 40px;
 	text-align: center;
 	margin-top: 50px;
 }
-/* .product-wrapper .product-get-quote:hover {
+.product-wrapper .product-get-quote:hover {
 	transform: scale(1.1);
-} */
+}
 /* service section  */
 main .service {
 	padding-top: var(--size-100);
@@ -491,14 +501,26 @@ main .request-engineer {
 	padding-bottom: var(--size-150);
 }
 .flex .text {
-	max-width: 450px;
+	max-width: 500px;
 	margin-right: auto;
 	color: var(--white-color);
 }
 .text h2 {
 	text-transform: capitalize;
 	font-size: var(--size-20);
-	font-weight: 600;
+	font-weight: 500;
+}
+.request-engineer .button {
+	background-color: var(--gold-color);
+	color: var(--white-color);
+	font-size: var(--size-15);
+	font-weight: 500;
+}
+
+.request-engineer .button:hover {
+	background-color: var(--dark-color);
+	color: var(--gold-color);
+	transform: scale(1.1);
 }
 /* footer section  */
 footer {
@@ -612,7 +634,9 @@ footer {
 .alt-send-btn .send-text {
 	display: block;
 	margin-top: var(--size-10);
-	font: 700 "Lato", sans-serif;
+	font:
+		700 "Lato",
+		sans-serif;
 	letter-spacing: 2px;
 	color: var(--gold-color);
 }
