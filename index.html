@@ -22,22 +22,35 @@
       gtag('config', 'G-CHZ4KV6N3H');
     </script>
     
-    <!-- Event snippet for Website Click to Call conversion page
-    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-    <script>
-    function gtag_report_conversion(url) {
-      var callback = function () {
-        if (typeof(url) != 'undefined') {
-          window.location = url;
-        }
-      };
-      gtag('event', 'conversion', {
-          'send_to': 'AW-18329923303/qOh5CKeKgdwcEOfdsaRE',
-          'event_callback': callback
-      });
-      return false;
+    <!-- Event snippet for Website Click conversion page
+    In your html page, add the snippet and call trackConversion when someone clicks on the chosen link or button. -->
+   <script>
+    function trackConversion(url, conversionId, newTab = false) {
+
+        let redirected = false;
+
+        const callback = function () {
+            if (redirected || !url) return;
+
+            redirected = true;
+
+            if (newTab) {
+                window.open(url, "_blank", "noopener,noreferrer");
+            } else {
+                window.location.href = url;
+            }
+        };
+
+        gtag('event', 'conversion', {
+            send_to: conversionId,
+            event_callback: callback
+        });
+
+        setTimeout(callback, 500);
+
+        return false;
     }
-    </script>
+  </script>
 
 
    <!-- Facebook tag (gtag.js) -->
@@ -102,7 +115,9 @@
           <!-- <span class="line"></span> -->
           <p>Strong Foundations Start with Quality Steel. <br> Unlock the potential of your construction projects with EDU TMT STEEL LIMITED, leading supplier of high-grade TMT rods and construction materials. <br>Trusted by builders across the region for quality, reliability, and timely delivery. </p>
           <div class="overlay-info-btn">
-             <a class="btn primary-btn" href="tel:+2348038685377" target="_blank" onclick="return gtag_report_conversion('tel:+2348038685377');"> <i class="fa-solid fa-phone"></i>&nbsp;Call For a Quote</a>
+             <a class="btn primary-btn" 
+             href="tel:+2348038685377" target="_blank" 
+             onclick="return trackConversion(this.href, 'AW-18329923303/qOh5CKeKgdwcEOfdsaRE');"> <i class="fa-solid fa-phone"></i>&nbsp;Call For a Quote</a>
             
              <a class="btn transparent-btn" href="#services">See Services&nbsp;<i class="fa-solid fa-long-arrow-right"></i></a>
             </div>
@@ -144,7 +159,6 @@
           <h4>Our Products</h4>
           <h2>We Supply Everything</h2>
           <span class="line"></span>
-          <!-- <p>Everyone should have access to quality materials from concrete and steel to finishing touches like tiles and paint, <br> we have it all.</p> -->
            <p>All products are sourced to standard and backed by our quality guarantee. <br> Whether you're breaking ground or finishing strong, we have what your project needs.</p>
         </div>
         <div class="grid">
@@ -204,7 +218,9 @@
           </div>
         </div>
         <div class="product-get-quote">
-          <a class="product-btn btn primary-btn" href="https://wa.me/2348038685377" target="_blank">Get Product Price Quote&nbsp;<i class="fa-solid fa-long-arrow-right"></i>
+          <a class="product-btn btn primary-btn" 
+          href="https://wa.me/2348038685377" target="_blank" 
+          onclick="return trackConversion( this.href, 'AW-18329923303/ANxuCOvm99wcEOfdsaRE', true);">Get Product Price Quote&nbsp;<i class="fa-solid fa-long-arrow-right"></i>
           </a>
         </div>
       </div>
@@ -410,7 +426,8 @@
               <h4>Ready To Build?</h4>
               <h2>Let's Start Your Project. We're ready when you are.</h2>
             </div>
-            <a href="https://wa.me/2348038685377" class="btn primary-btn button" target="_blank">WhatsApp Us</a>
+            <a href="https://wa.me/2348038685377" class="btn primary-btn button" target="_blank" 
+            onclick="return trackConversion( this.href, 'AW-18329923303/ANxuCOvm99wcEOfdsaRE', true);">WhatsApp Us</a>
           </div>
         </div>
       </section>
