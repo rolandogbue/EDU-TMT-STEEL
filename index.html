@@ -21,6 +21,24 @@
 
       gtag('config', 'G-CHZ4KV6N3H');
     </script>
+    
+    <!-- Event snippet for Website Click to Call conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-18329923303/qOh5CKeKgdwcEOfdsaRE',
+          'event_callback': callback
+      });
+      return false;
+    }
+    </script>
+
 
    <!-- Facebook tag (gtag.js) -->
      <meta name="facebook-domain-verification" content="puhbg3rfhtpac0uscieqqffw7ytwr3" />
@@ -84,8 +102,9 @@
           <!-- <span class="line"></span> -->
           <p>Strong Foundations Start with Quality Steel. <br> Unlock the potential of your construction projects with EDU TMT STEEL LIMITED, leading supplier of high-grade TMT rods and construction materials. <br>Trusted by builders across the region for quality, reliability, and timely delivery. </p>
           <div class="overlay-info-btn">
-             <a class="btn primary-btn" href="tel:+2348038685377" target="_blank"> <i class="fa-solid fa-phone"></i>&nbsp;Call For a Quote</a>
-            <a class="btn transparent-btn" href="#services">See Services&nbsp;<i class="fa-solid fa-long-arrow-right"></i></a>
+             <a class="btn primary-btn" href="tel:+2348038685377" target="_blank" onclick="return gtag_report_conversion('tel:+2348038685377');"> <i class="fa-solid fa-phone"></i>&nbsp;Call For a Quote</a>
+            
+             <a class="btn transparent-btn" href="#services">See Services&nbsp;<i class="fa-solid fa-long-arrow-right"></i></a>
             </div>
         </div>
       </div>
